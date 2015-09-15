@@ -34,6 +34,8 @@ Se mais de um conteúdo é passado, múltiplas tags são geradas::
 """
 
 def tag(nome, *conteudos, **atributos):
+    """gera elementos XML"""
+
     if atributos:
         lista_atr = []
         for chave, valor in sorted(atributos.items()):
